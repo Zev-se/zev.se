@@ -13,17 +13,17 @@ pygmentscodefencesguesssyntax = true
 #disqusShortname = "yourdiscussshortname"
 
 [params]
-  author = "John Doe"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
-  keywords = "blog,developer,personal"
-#  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  author = "ZEV"
+  info = "A page of good enough projects"
+  description = "Where does this display?"
+  keywords = "blog,projects,personal"
+  avatarurl = "images/avatar.png"
+#  gravatar = "john.doe@example.com"
 
  # favicon_32 = "/img/favicon-32x32.png"
  # favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2022
 
   enableTwemoji = true
 
@@ -41,21 +41,21 @@ pygmentscodefencesguesssyntax = true
 #  author = "authors"
 
 # Social links
-#[[params.social]]
-#  name = "Github"
-#  icon = "fa fa-github fa-2x"
-#  weight = 1
-#  url = "https://github.com/johndoe/"
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/zevswe/"
 #[[params.social]]
 #  name = "Gitlab"
 #  icon = "fa fa-gitlab fa-2x"
 #  weight = 2
 #  url = "https://gitlab.com/johndoe/"
-#[[params.social]]
-#  name = "Twitter"
-#  icon = "fa fa-twitter fa-2x"
-#  weight = 3
-#  url = "https://twitter.com/johndoe/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/ZevSwe/"
 
 # Menu links
 [[menu.main]]
