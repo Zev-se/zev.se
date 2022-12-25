@@ -1,7 +1,14 @@
 +++
 draft = false
-title = "Getting Started"
 date = 2022-12-25T17:45:17+01:00
+title = "Getting Started"
+description = ""
+slug = ""
+authors = ['zev']
+tags = []
+categories = []
+externalLink = ""
+series = []
 +++
 
 So I thought I would not publish yet. I still have no logo, the first page isn't modified yet, not sure I like the font sizes and spacing. But then I realized, thsi is the exact oposite of what this page is supposed to be. I'm trying to get things good and polished before publishing when this page in fact is for all the half done, good enough projects. The proof-of-concept, might fix later-projects. So here we go, this is what you'll get and if, when you read this, the page has a logo there's probably a post about designing it.
