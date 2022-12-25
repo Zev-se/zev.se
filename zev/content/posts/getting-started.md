@@ -93,7 +93,7 @@ networks:
     external: true
 ```
 
-We can now again turn to our proxy manager. Changing mainly port.
+We can now again turn to our proxy manager. Changing mainly port but also removing som environment variables we don't need.
 ![](/images/20221225111511.png)
 
 Lets add TLS. This is honestly the best part of the proxy, we can simply turn TLS with Let's Encrypt on. Fantastic!
@@ -141,3 +141,5 @@ I guess I will wrap up for today. But there are a few things left to do.
 * Fix code block highlighting
 * Size of headings looks to big in contrast to menu
 * Fix logo
+* Fixing spacing right now it looks terrible (sorry)
+* Fixing images not streched out to max
