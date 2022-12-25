@@ -118,7 +118,7 @@ fi
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # move old files to backup
-    zip -jr ~/www-backup/"$(date '+%F-%T').zip" /opt/docker-data/www-public
+    zip -r ~/www-backup/"$(date '+%F-%T').zip" /opt/docker-data/www-public
     rm -r /opt/docker-data/www-public/*
     # Move compiled page to /opt/docker-data/www-public
     cp -r ~/site-tmp/* /opt/docker-data/www-public/
@@ -143,3 +143,4 @@ I guess I will wrap up for today. But there are a few things left to do.
 * Fix logo
 * Fixing spacing right now it looks terrible (sorry)
 * Fixing images not streched out to max
+* Fix backup, 

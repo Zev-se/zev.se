@@ -41,7 +41,8 @@
 
     p {
       text-align: justify;
-      text-justify: auto;
+      text-justify: distribute;
+      text-align-last: left;
       hyphens: auto;
     }
   }
