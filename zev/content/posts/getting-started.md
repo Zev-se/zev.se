@@ -35,7 +35,7 @@ networks:
     external: true
 ```
 
-Original code can be found here: https://sws.joseluisq.net/features/docker/#docker-compose
+Original code can be found [here](https://sws.joseluisq.net/features/docker/#docker-compose).
 
 Now time to modify the DNS record of my provider to point towards my VM:s public IP (the VM is the underlying OS the docker images runs on). We also need to configure the proxy to point towards the correct internal IP. That IP can be found under the container in portainer.
 
