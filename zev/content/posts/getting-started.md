@@ -1,14 +1,8 @@
----
-title: "Getting Started"
-date: 2022-12-25T17:45:17+01:00
-draft: false
----
-
-# blogpost_getstarted
-Parent: 
-Tags: 
-
----
++++
+draft = false
+title = "Getting Started"
+date = 2022-12-25T17:45:17+01:00
++++
 
 So I thought I would not publish yet. I still have no logo, the first page isn't modified yet, not sure I like the font sizes and spacing. But then I realized, thsi is the exact oposite of what this page is supposed to be. I'm trying to get things good and polished before publishing when this page in fact is for all the half done, good enough projects. The proof-of-concept, might fix later-projects. So here we go, this is what you'll get and if, when you read this, the page has a logo there's probably a post about designing it.
 
@@ -66,9 +60,9 @@ zev.se.			0	IN	A	193.11.114.26
 ```
 
 Seems to work. Let's now work on portainer. We can see the docker image has gotten a IP in our network, this printscreen is from the stack view for anyone wondering.
-![[Pasted image 20221225105323.png]]
+![Avatar](/images/20221225105323.png)
 Time to get this into our NPM-manager. 
-![[Pasted image 20221225111244.png]]
+![Avatar](/images/20221225111244.png)
 
 It simply won't work. So I started digging. Found some errors in the docker-compose file. One way to test this is to curl from the terminal of the server. The NPM network is reachable so if it does not respond there it's not a proxy issue but a configuration error in the container. This however seems to work:
 ```bash
@@ -92,11 +86,12 @@ networks:
 ```
 
 We can now again turn to our proxy manager. Changing mainly port.
-![[Pasted image 20221225111511.png]]
+![Avatar](/images/20221225111511.png)
 
 Lets add TLS. This is honestly the best part of the proxy, we can simply turn TLS with Let's Encrypt on. Fantastic!
-![[Pasted image 20221225172840.png]]
-![[Pasted image 20221225173006.png]]
+![Avatar](/images/20221225172840.png)
+![Avatar](/images/20221225173006.png)
+
 
 So finally time to compile the webpage and get things up and running. I've used GoHugo and use Github to keep track of it. As I'm lazy let's write a small script that does most things for us:
 
