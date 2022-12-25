@@ -1,4 +1,4 @@
-baseurl = "http://zev.se"
+baseurl = "https://zev.se"
 title = "Zev"
 theme = "hugo-coder"
 languagecode = "en"
