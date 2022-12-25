@@ -141,6 +141,6 @@ I guess I will wrap up for today. But there are a few things left to do.
 * Fix code block highlighting
 * Size of headings looks to big in contrast to menu
 * Fix logo
-* Fixing spacing right now it looks terrible (sorry)
+* Fixing spacing, I aligned to the left for now
 * Fixing images not streched out to max
-* Fix backup, 
+* Sending text through spell check
