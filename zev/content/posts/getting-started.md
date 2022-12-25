@@ -11,12 +11,12 @@ externalLink = ""
 series = []
 +++
 
-So I thought I would not publish yet. I still have no logo, the first page isn't modified yet, not sure I like the font sizes and spacing. But then I realized, thsi is the exact oposite of what this page is supposed to be. I'm trying to get things good and polished before publishing when this page in fact is for all the half done, good enough projects. The proof-of-concept, might fix later-projects. So here we go, this is what you'll get and if, when you read this, the page has a logo there's probably a post about designing it.
+So I thought I would not publish yet. I still have no logo, the first page isn't modified yet, not sure I like the font sizes and spacing. But then I realized, this is the exact oposite of what this page is supposed to be. I'm trying to get things good and polished before publishing when this page in fact is for all the half done, good enough projects. The proof-of-concept, might fix later-projects. So here we go, this is what you'll get and if, when you read this, the page has a logo there's probably a post about designing it.
 
-To get this page up I found XXX. It can also be hosted via Docker. So it should be fairly simple. The modified codes looks like this (note this is wrong and will be changed further down):
+To get this page up I found joseluisq Static Web Server. It can also be hosted via Docker. So it should be fairly simple. The modified codes looks like this (note this is wrong and will be changed further down):
 
 ```
-version: "3.3"
+version: "3.8"
 
 services:
   web:
@@ -67,9 +67,10 @@ zev.se.			0	IN	A	193.11.114.26
 ```
 
 Seems to work. Let's now work on portainer. We can see the docker image has gotten a IP in our network, this printscreen is from the stack view for anyone wondering.
-![Avatar](/images/20221225105323.png)
+![](/images/20221225105323.png)
+
 Time to get this into our NPM-manager. 
-![Avatar](/images/20221225111244.png)
+![](/images/20221225111244.png)
 
 It simply won't work. So I started digging. Found some errors in the docker-compose file. One way to test this is to curl from the terminal of the server. The NPM network is reachable so if it does not respond there it's not a proxy issue but a configuration error in the container. This however seems to work:
 ```bash
@@ -93,11 +94,11 @@ networks:
 ```
 
 We can now again turn to our proxy manager. Changing mainly port.
-![Avatar](/images/20221225111511.png)
+![](/images/20221225111511.png)
 
 Lets add TLS. This is honestly the best part of the proxy, we can simply turn TLS with Let's Encrypt on. Fantastic!
-![Avatar](/images/20221225172840.png)
-![Avatar](/images/20221225173006.png)
+![](/images/20221225172840.png)
+![](/images/20221225173006.png)
 
 
 So finally time to compile the webpage and get things up and running. I've used GoHugo and use Github to keep track of it. As I'm lazy let's write a small script that does most things for us:
@@ -121,8 +122,22 @@ then
     rm -r /opt/docker-data/www-public/*
     # Move compiled page to /opt/docker-data/www-public
     cp -r ~/site-tmp/* /opt/docker-data/www-public/
-    echo "please reboot docker image in portainer"
     read -p "press Enter to continue"
-    rm -r ~/site-tmp/
+    rm -r ~/site-tmp/*
 fi
 ```
+
+Most things works as suspected but not the icons. For some reason the font wont load.
+![](/images/static/images/2022-04-22-101623_screenshot.png)
+
+Looking into the files we can see that the theme has not been synced. This is because I did not clone the repository recursivly (also cloning repositories in repositories). Thus we don't get those files. This would have been more obvoius if I haden't had local copies of most files in my repo to play around with that overrides those in the theme-directory. The issue is however solvable by running `git clone --recursive [URL to Git repo]`.
+![](/images/static/images/2022-12-25-220844_screenshot.png)
+
+Now that this is fixed things looks like I want to.
+![](/images/static/images/2022-12-25-223053_screenshot.png)
+
+I guess I will wrap up for today. But there are a few things left to do.
+* Fix color of code blocks
+* Fix code block highlighting
+* Size of headings looks to big in contrast to menu
+* Fix logo
