@@ -54,8 +54,14 @@ pygmentscodefencesguesssyntax = true
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
-  weight = 3
+  weight = 2
   url = "https://twitter.com/Zev_se/"
+
+  [[params.social]]
+  name = "Mastodon"
+  icon = "fa-brands fa-mastodon"
+  weight = 3
+  url = "https://infosec.exchange/@Zev"
 
 # Menu links
 [[menu.main]]
