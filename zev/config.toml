@@ -45,7 +45,7 @@ pygmentscodefencesguesssyntax = true
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/zevswe/"
+  url = "https://github.com/zev_se/"
 #[[params.social]]
 #  name = "Gitlab"
 #  icon = "fa fa-gitlab fa-2x"
@@ -55,7 +55,7 @@ pygmentscodefencesguesssyntax = true
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
   weight = 3
-  url = "https://twitter.com/ZevSwe/"
+  url = "https://twitter.com/Zev_se/"
 
 # Menu links
 [[menu.main]]
