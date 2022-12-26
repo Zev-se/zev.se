@@ -59,7 +59,7 @@ pygmentscodefencesguesssyntax = true
 
   [[params.social]]
   name = "Mastodon"
-  icon = "fa-brands fa-mastodon"
+  icon = "fa fa-mastodon fa-2x"
   weight = 3
   url = "https://infosec.exchange/@Zev"
 
