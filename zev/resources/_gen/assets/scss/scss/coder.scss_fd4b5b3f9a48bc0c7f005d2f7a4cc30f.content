@@ -3274,8 +3274,9 @@ figure {
       .content article footer .see-also h3 {
         margin: 3.2rem 0; }
   .content article p {
-    text-align: justify;
+    text-align: left;
     text-justify: auto;
+    text-align-last: left;
     hyphens: auto; }
   .content .post .post-title {
     margin-bottom: 0.75em; }
