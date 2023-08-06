@@ -33,7 +33,10 @@ Klipper partly on chineese, not really sure why one has chosen to name some Macr
 The Cura settings and instructions are lacking. Given I run Linux on my computer I spent some time trying to understand what and where to place the files. No matter what I did I could not get it to work. After many hours I found a [comment](https://kingroon.com/blogs/3d-print-101/kingroon-kp3s-pro-v2-and-klp1-3d-printer-into-the-cura-profile-settings) noting it specifically works for Cura [5.3](https://github.com/Ultimaker/Cura/releases/tag/5.3.1) which isn't obvious, also I think the README might be wrong, it asks the user to put the STL-file in a folder called mesh, but in reality it should be called meshes, this directory you will have to create. Another problem is that the infill setting can't be changed from 15 procent, it's hard locked in the config somewhere. In any case here's where the files should be saved, this could also bee seen through the menu. Once the files are in the correct place and you restart Cura you should see the printer in the new printer menu.
 ![](/images/20230806141923.png)
 
+For anyone looking, this is what you need to do:
 ```bash
+#cd into whereever you downloaded the files
+sudo mkdir ~.local/share/cura/5.3/resources/meshes
 sudo cp -r KINGROON_KP3S_PRO_V2 ~/.local/share/cura/5.3/resources/quality/
 sudo cp KINGROON_KP3S_PRO_V2.def.json ~/.local/share/cura/5.3/resources/definitions/
 sudo cp KINGROON_KP3S_PRO_V2_extruder_0.def.json /~/.local/share/cura/5.3/resources/extruders/
