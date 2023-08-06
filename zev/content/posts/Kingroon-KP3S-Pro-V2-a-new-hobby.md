@@ -1,6 +1,6 @@
 +++
 draft = false
-title = "Kingroon KPS3 Pro V2, a New Hobby"
+title = "Kingroon KP3S Pro V2, a New Hobby"
 date = 2023-08-06T21:14:32+02:00
 description = ""
 slug = ""
