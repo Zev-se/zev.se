@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 +++
 
-Yet another project of trail and error. This one about installing a Getting THing Done web app for me and my partner.
+Yet another project of trail and error. This one about installing a Getting Thing Done web app for me and my partner.
 
 This is a very typical of my projects. Found cool Free and Open Source Software I could self host that would some some problems. Found it could be hosted via docker. Figured I should probably get at better setup where I have more control, so I installed a new server. This time with fedora instead of Ubuntu. This small project now got a bit larger. Anyhow, download a ISO, upload ISO to proxmox, spawn new server, login via webgui and set an IP, turn off and then on the interface. No connection. No route. Add route through the `route add` command, ssh in and set long password, reboot the machine. No longer any connection. I then remember `route` isn't percistant. I then type my long password into the web-CLI and instead use nmcli to add a default gateway. Try to upgrade but have issues with repos. No DNS configured... Adding DNS. Restart interface and  it works. Switching to a SSH connection.
 
