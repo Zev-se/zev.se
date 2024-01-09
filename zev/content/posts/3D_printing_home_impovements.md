@@ -16,7 +16,6 @@ It's been some time. I've spent to much time on fixing my printer and waiting on
 1. Spotlight cones. Covering the ugly part that sticks down from our seeling as the wholes aren't deep enough.
 ![](/images/spotlight_cone_1.jpg)
 These are printed at my local makerspace as my printer was temporarily down. As one can tell there's more the a bit of vertical ripples and what not. This is however not a big problem as these will be mounted in the roof and you can't see it from the distance. I could sand it down but there's really no need.
-
 ![](/images/spotlight_cone_2.jpg)
 Here one of them is mounted in the seeling.
 
@@ -25,9 +24,9 @@ Here one of them is mounted in the seeling.
 
 3. Shower rail mount. The last one broke, probaby ten years old. Good luck finding a new one.
 ![](/images/shower_rail_mount_original.jpg)
-
+Here's the original one.
 ![](/images/shower_rail_mount.jpg)
-
+This is the new one mounted. First try may I add :)
 4. Spaybottle holders. These are not designed by me. There good and can be found [here](https://www.printables.com/model/225689-spraybottle-holder) if you're interested.
 ![](/images/spaybottle_holder.jpg)
 
@@ -36,4 +35,4 @@ Here one of them is mounted in the seeling.
 6. Ikea Enhet cabinet benchtop brackets. There can be found [here](https://www.printables.com/model/683560-ikea-enhet-benchtop-mount).
 ![](/images/PC_cat_protector.jpg)
 
-In hopes of more prints to come!
+In hopes of more prints to come, happy new year!
