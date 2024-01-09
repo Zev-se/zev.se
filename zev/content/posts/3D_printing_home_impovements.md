@@ -21,7 +21,7 @@ These are printed at my local makerspace as my printer was temporarily down. As 
 Here one of them is mounted in the seeling.
 
 2. Power off, cat protector.
-![](/images/IMG_3345.jpeg)
+![](/images/PC_cat_protector.jpg)
 
 3. Shower rail mount. The last one broke, probaby ten years old. Good luck finding a new one.
 ![](/images/shower_rail_mount_original.jpg)
@@ -34,6 +34,6 @@ Here one of them is mounted in the seeling.
 5. Child locks. These are not designed by me. There good and can be found [here](https://www.printables.com/model/90072-child-proofing-cabinet-lock) if you're interested
 
 6. Ikea Enhet cabinet benchtop brackets. There can be found [here](https://www.printables.com/model/683560-ikea-enhet-benchtop-mount).
-![](/images/IMG_3345.jpeg)
+![](/images/PC_cat_protector.jpg)
 
 In hopes of more prints to come!
