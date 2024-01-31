@@ -33,6 +33,6 @@ This is the new one mounted. First try may I add :)
 5. Child locks. These are not designed by me. There good and can be found [here](https://www.printables.com/model/90072-child-proofing-cabinet-lock) if you're interested
 
 6. Ikea Enhet cabinet benchtop brackets. There can be found [here](https://www.printables.com/model/683560-ikea-enhet-benchtop-mount).
-![](/images/PC_cat_protector.jpg)
+![](/images/ikea_enhet_bracket.jpg)
 
 In hopes of more prints to come, happy new year!
