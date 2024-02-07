@@ -56,7 +56,9 @@ volumes:
   config:
 ```
 
-Tandoor nginx-file. Place this in /path/to/volumes/swag_config/_data/nginx/site-confs/tandoor.domain.tld.conf. In my case this lives in /var/lib/docker/volumes/swag_config/_data/nginx/site-conf.
+###### Tandoor nginx-file. 
+
+Place this in `/path/to/volumes/swag_config/_data/nginx/site-confs/tandoor.domain.tld.conf`. In my case this lives in `/var/lib/docker/volumes/swag_config/_data/nginx/site-conf/tandoor.zev.se`.
 
 When the file is modified and saved make sure to restart the SWAG container and check container logs for failures, I do this through portainer.
 
@@ -145,7 +147,7 @@ networks:
 ```
 
 ###### Tandoor .env-file
-```env
+```
 SECRET_KEY=<CHANGE ME>
 DB_ENGINE=django.db.backends.postgresql
 POSTGRES_HOST=db_recipes
