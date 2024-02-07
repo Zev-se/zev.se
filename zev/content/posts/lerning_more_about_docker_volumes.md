@@ -15,7 +15,29 @@ This project wasn't meant to happen. Niether was it supposed to learn more about
 
 Setting this up was fun, I got proxmox updated, got a new cloud up. Got calenders working. Fix fix fix. I then migrated my containers, and while doing so thought it would be good making some changes for the better. For gorcery shopping and recipes I used to run open-eats, it's been good but a bit outdated so I started looking around and found [Tandoor](https://github.com/TandoorRecipes/recipes) which seems to be a alternative. 
 
-Setting this up as I'm used to, which is using bind mounts does not work for this project. Trust me, I tried. After a chat in their [Discord](https://discord.gg/RhzBrfWgtp) I moved from my setup to docker volumes insted, I also had to learn using .env-files. Now I'm inspired to fix all my bind mounts to volumes instead. It's been a lot of frustation and my issues aren't over here.
+Setting this up as I'm used to, which is using bind mounts does not work for this project. Trust me, I tried. After a chat in their [Discord](https://discord.gg/RhzBrfWgtp) I moved from my setup to docker volumes insted, I also had to learn using .env-files. Now I'm inspired to fix all my bind mounts to volumes instead. It's been a lot of frustation and my issues aren't over here. 
+
+But what is a bind-mount? I bind mount is when you mount a static directory of your choice in the host machine to a static directory in the docker container. in the config it would look something like this:
+
+```yaml
+services:
+   web_recipes:
+      volumes:
+        - /opt/docker-data/tandoor/mediafiles:/opt/recipes/mediafiles
+```
+
+The first part is the host directory and the path after the colon is to where it's mounted. Now we could use a volume instead.
+
+```yaml
+services:
+   web_recipes:
+      volumes:
+        - mediafiles:/opt/recipes/mediafiles
+volumes:
+  mediafiles:
+```
+
+This will create a directory with the data among your docker volumes. Normally these are stored in `/var/lib/docker/volumes`. It will also get the volume of the stack. In thes case it will be called tandoor_mediafiles as tandoor is what I've called this stack. Do note the directory will be owned by root and thus you need elevated privileges to list or modify files within it.
 
 So far I've been blessed with the simplicity of using Nginx Proxy Manager in front of the contaiers and using that to insert TLS certificats. Howerever, Tandoor does not seem to work with Nginx Proxy Manager, and I've growe a bit tired of the manual work as it uses internal IP-adresses that are somewhat dynamic. Thus I decided to take the leep over to [SWAG](https://docs.linuxserver.io/general/swag/). I've now gotten this to work (with dockers built in DNS). As I haven't found any good documentation of how to set this up given you don't run SWAG in the same stack I thought I'd share my configs. They are listed below.
 
