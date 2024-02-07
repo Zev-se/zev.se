@@ -17,12 +17,13 @@ Setting this up was fun, I got proxmox updated, got a new cloud up. Got calender
 
 For this to work I needed to create two DNS-entries manually. Not sure how the second one was handled by Nginx Proxy Manager. This took a few tries to figure out.
 
-##### DNS
-A-record:   Tandoor.domain.tld <IP>
-CAA-record: tandoor.domain.tld <0 issue "letsencrypt.org">
+#### DNS
+`A-record:   Tandoor.domain.tld <IP>`
+`CAA-record: tandoor.domain.tld <0 issue "letsencrypt.org">`
 
-##### SWAG docker
-SWAG compose file
+#### SWAG docker
+
+###### SWAG compose file
 
 Do note I have a main site (the one you're on) and several subdomains in thes config. If you only run tandoor, put that whole domain in the URL row and remove or comment out the SUBDOMAIN row.
 ```yaml
@@ -81,13 +82,13 @@ server {
 
 ```
 
-##### Tandoor docker
+#### Tandoor docker
 
 Do note:
 - I use portainer and import the env-file. Thus the env_file is called stack.env.
 - The swag_default network is created by the SWAG stack, thus it needs to be started before this stack for this to work.
 
-Tandoor
+###### Tandoor
 ```yaml
 ---
 version: "3.8"
@@ -142,7 +143,7 @@ networks:
       external: true
 ```
 
-Tandoor .env-file
+###### Tandoor .env-file
 ```env
 SECRET_KEY=<CHANGE ME>
 DB_ENGINE=django.db.backends.postgresql
