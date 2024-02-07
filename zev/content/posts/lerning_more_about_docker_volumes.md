@@ -19,6 +19,7 @@ For this to work I needed to create two DNS-entries manually. Not sure how the s
 
 #### DNS
 `A-record:   Tandoor.domain.tld <IP>`
+
 `CAA-record: tandoor.domain.tld <0 issue "letsencrypt.org">`
 
 #### SWAG docker
