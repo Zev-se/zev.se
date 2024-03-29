@@ -34,7 +34,7 @@ Voron Discord:
 Mellow 3D Discord:
 - jay_s_uk - teamgloomy
 
-I also watched a bunch of youtubers, for inspiration before buying and also to help me understand where things were a tiny bit unclear. As I don't have a complete list I wont include it but Voron-youtube, thanks!
+I also watched a bunch of youtubers, for inspiration before buying and also to help me understand where things were a tiny bit unclear. As I don't have a complete list I won't include it but Voron-youtube, thanks!
 
 Last but not least course **a huge thanks to the Voron team!**
 
@@ -42,7 +42,7 @@ Last but not least course **a huge thanks to the Voron team!**
 
 ## For anyone considering this build
 
-I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small(see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
+I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small (see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
 ![](/images/tolarance_too_small.jpeg)
 
 If (when) I'm to do this again, I will also spend a few bucks on some plastic sorters. Dealing with screws in ziplock-bags got old very quickly. Anything will do but I would probably buy something along the one below. If they have loose compartments use some hotglue to save yourself from dealing with walls getting loose.
@@ -53,7 +53,7 @@ If (when) I'm to do this again, I will also spend a few bucks on some plastic so
 Lastly, electricity, especially mains power and AC is dangerous. Please be careful.
 
 ## Jumping between different PDF:s
-It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the voron guide on page 178). The PDF's are:
+It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the Voron guide on page 178). The PDF's are:
 - [The Voron 2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
 - [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
@@ -65,6 +65,7 @@ I'll try summerising the jumps here:
 |---|----|----|---|
 |Voron 2.4R2|1|29||
 ||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
+||31|38||
 ||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
 ||40|129||
 |Voron TAP|1|29|The version of tap is slightly different see below.|
@@ -120,18 +121,18 @@ How the original STL looks:
 ### Larger issues
 - The mounting of the DIN rails are different in the Voron setup. This was by far the most anoying thing in the whole build. I of course did not notice this before trying to mounting the A and B motor cables. I had then spent some time tidying thing up. Had to redo everything. Also one of the motors has to be turned for the PSU to fit. I have no idea why they choce to do it this way nor why the documentations is so poor. It just seems odd to not make this very clear and spend some time making sure the electrical configuration guide is very clear. In frustration I asked about this on the Discord but mostly got a "everyone knows the documentation from Formbot sucks". I hope the new kits will force an update.
 
-- This is what the Voron guide says on page, note where front and back is.
+    - This is what the Voron guide says on page, note where front and back is.
 ![](/images/voron_din_rails_mount.png)
 
-- This is the first page of the Formbot wiring, this is where your supposed to see that you've mounted the DIN-rails wring some 100 page earlier.
+    - This is the first page of the Formbot wiring, this is where your supposed to see that you've mounted the DIN-rails wrong some 100 page earlier.
 ![](/images/formbot_din_rail_mount.png)
 
-- This lead to everything needing remounting, you could probably smell the frustration
+    - This lead to everything needing remounting, you could probably smell the frustration
 ![](/images/din_rails_original_mount.jpeg)
 ![](/images/re-mounting.jpeg)
 ![](/images/Electrics_mounted.jpeg)
 
-- Here's the problem with the morots on the 300x300 size. This i fixed by turning the motor 90 degrees so that the cables are pointed upwards.
+- Here's the problem with the morots on the 300x300 size. This i fixed by turning the motor 90 degrees so that the cables are pointed upwards. If you look closly this is done in the image above.
 ![](/images/motor_cables_not_fitting.jpeg)
 
 - No mention to also drag neopixel cable, this you will probably find out after you've mounted everything making you have to redo the cable chains. If you have an octopus V1.1 it should be routed to the led pins, there should be three, this cable should be connected to the two on the USB-port side, with the 5V being closest to that side. They share ground with the rest of the board so that cable isn't needed.
