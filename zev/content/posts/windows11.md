@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2022-07-25T20:32:40+02:00
-title = ""
+title = "Windows 11"
 description = ""
 slug = ""
 authors = ['zev']
