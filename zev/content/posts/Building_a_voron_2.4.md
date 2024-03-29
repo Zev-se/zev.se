@@ -150,6 +150,7 @@ How the original STL looks:
 
 - The split ground cable is a bit to short to make the routing nice, it also is to small to fit the screw so to make it fit one has to cut it.
 ![](/images/earth_too_short.jpeg)
+![](/images/earth_too_small.jpeg)
 
 - All screws in the kit are stainless steal, it's nice for everything but on page 27 of the TAP manual. The two M3x6 FHCS needs to me magnetic. I had to find my own and change these out.
 ![](/images/replaced_screws.jpeg)
