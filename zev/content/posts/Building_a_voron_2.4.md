@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2024-03-17T17:00:17+01:00
+date = 2024-03-30T17:00:17+01:00
 title = "Building a Voron 2.4"
 description = ""
 slug = ""
