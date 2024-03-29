@@ -36,40 +36,48 @@ Last but not least course a huge thanks to the Voron team!
 I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small(see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
 ![](/images/tolarance_too_small.jpeg)
 
-If (when) I'm to do this again, I will also spend a few bucks on some plastic sorters. Dealing with screws in ziplock-bags got old very quickly. Anything will do but I would probably buy something along the one below. If they have loose compartments use some hotglue to save yourself from dealing with walls getting loose,
+If (when) I'm to do this again, I will also spend a few bucks on some plastic sorters. Dealing with screws in ziplock-bags got old very quickly. Anything will do but I would probably buy something along the one below. If they have loose compartments use some hotglue to save yourself from dealing with walls getting loose.
 
 ![](/images/sortment_box.jpg)
 ![](/images/screws_in_bags.jpeg)
 
 #### Jumping between different PDF:s
 It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the voron guide on page 178). The PDF's are:
-- (The Voron 2.4R2 Assembly Manual)[https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf]
-- (The Stealthburner Assembly Manual)[https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf]
-- (The Voron Tap Assembly Manual)[https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf]
-- (The Formbot wiering guide)[https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing]
+- [The Voron 2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
+- [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
+- [The Voron Tap Assembly Manual](https://github.com/VoronDesign/Voron-Tap/blob/main/Manual/Assembly_Manual_Tap.pdf)
+- [The Formbot wiering guide](https://drive.google.com/file/d/19wdkwaP-MP6JrulkZ-r0Kav1kbvxzPzk/view?usp=sharing)
 
 I'll try summerising the jumps here:
-- Start with the Voron 2.4R2 PDF
-- At page 30 turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue
-- At page 39, if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later
-- At page 129 jump to the Voron TAP pdf and build that, the version of tap is slightly different see below. At page 31 of the TAP PDF go back to the Voron 2.4R2 PDF and do steps on page 131 through 142, then go back and finnish the TAP instructions tightening the belts
-- Now go to the stealthburner PDF and do that top to page 58, note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one. Then go back to page 148 of the Voron 2.4R2 instructions
-- Do page 150 through 157, but don't mount anything. Also note there's no 5V PSU but instead a extra PCB
-- Jump to page 162 and follow along through page 167
-- Jump to page 175 and follow along to page 177
-- Now switch to page one of the Formbot Wiering instructions, mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this blog-post with what is what.
-- Jump back to the Voron V2.4R2 PDF at page 180 and follow along, this won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.
-- When at page 194 mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)
-- On page 200 the B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties
-- When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the Big tree tech PI version and from it flash the octopus board via the other smaller included SD-card.
-- Now follow the post build instructions to make sure you've done everything correct
+
+| Switch to manual| Page | Stop at page | Comment|
+|---|----|----|---|
+|Voron 2.4R2|1|29||
+||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
+||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
+||40|129||
+|Voron TAP|1|29|The version of tap is slightly different see below.|
+|Voron 2.4R2|131|142||
+|Voron TAP|31|36|||
+|Stealthburner PDF|1|58|note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.|
+|Voron 2.4R2|148|157|Don't mount anything. Also note there's no 5V PSU but instead a extra PCB|
+||162|167| Skip page 158-161|
+||175|177| Skip page 168-174|
+|Formbot Wiering guide|1|4|mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this blog-post with what is what.|
+|Voron V2.4R2|180|193|this won't be 100% correct as there's no 5V PSU and there's an extra PCB, be carefull here.|
+||194|199|mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)|
+||200||The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below|
+||201|204||
+|Voron V2.4R2 & ormbot wiering PDF||| Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
+- Now follow the post build instructions to make sure you've done everything correct|
+
 
 #### Notes from the build
 
 ##### The printed parts kit from Formbot
 As my old printer had acted up I decided to buy a kit of parts from formbot (instead of using the print it forward program). This kit was mostly fine but there are three templates used when mounting the rails on the extrusion. I'm guessing most people who buy this kit of printed parts don't have a working printer at the moment. It would be nice if these were included. I guess some would have a printer that could print these in PLA but still. It's three very small parts to include I would happily pay an extra few bucks for. They are referenced as MGN12_rail_guide_x2.stl and MGN9_rail_guide_x2.stl and pulley_jig.stl in the Voron build guide.
 
-A quick note about that (kit)[https://www.formbot3d.com/products/high-quality-3d-printed-parts-for-voron-24-pro-kit?VariantsId=11047], it also would be nice if they linked what filament they used so that one could print new matching parts when done.
+A quick note about that [kit](https://www.formbot3d.com/products/high-quality-3d-printed-parts-for-voron-24-pro-kit?VariantsId=11047), it also would be nice if they linked what filament they used so that one could print new matching parts when done.
 
 One of these printed parts was I bit to tight. The part holds the gantry together. One of the A-B belt weels got too pinched. This happens, the tolarances are very fine. I shimed the part with two layers of craft paper and it now works perfectly.
 
@@ -163,6 +171,9 @@ I found it to be unclear how many of what panel mounts are needed. But the STLs 
 The cable chains are a bit too long, you can remove links so this really isn't an issue. Rather nice having a few extra. A tip is to mount the ends separatly and connect them once all the cables are inside (as the part that closes will face down towards the 20x20 extrusion).
 ![](/images/Cable_chain_too_long.jpeg)
 ![](/images/cable_chain_tip.jpeg)
+
+B-motor cable route, used instead of zipties
+![](/images/A_B_motor_cable.jpeg)
 
 From what I remember, the kit said to include a nevermore filter. It dosen't. It does include some hardware, fans, coal, WAGO-clips, a cable, some screws. But it does not include the plastic parts. This is a bit of an issue. I would want the filter to print ABS, but to print ABS I want that filter. I opted to first print all panel clips in PLA and then print the nevermore parts it with a window open. The printer isn't tuned properly but I also don't want to do that without the filter. So this is good enough for now. When the printer is tuned I will reprint this. I can also say mounting this was hell, getting the headed bed back in place took some time. As you can see I choose to print the (V6 version)[https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6] and not the (Formbot version)[https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view] (if link is broken, they can be found (here)[https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view]). I didn't have a JST connector over so I've temporarily used other connectors.
 ![](/images/never_more_temp_connectors.jpeg)
