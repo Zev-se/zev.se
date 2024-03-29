@@ -11,7 +11,10 @@ externalLink = ""
 series = []
 +++
 
-I had so many issues with my old small 3D printer I decided it was time to upgrade. I spent more time on fixing issues then printing and it got frustrating really fast so here we are. I bought a Formbot kit in the end of January. It has been sitting in it's box for a bit more then a month but this week was finally that week. This post will be a list of issues I found with the build, where the instructions simply were wrong or where I found it to be hard to follow. But to put this into context this build has for the most part been a lot of fun and of several hundred pages of documentations there are a few where things got unclear. The Voron team both surprise me of how well put together this is and inspire me. Vivedino (the company behind the formbot kit) has put together an amazing kit, I just wish they spent a few hours on the documentation. With that said let's begin, but first things first. Credit where credit is due. This build would not have gone as well as it did if it wasn't for the amazing helt of people on the Voron and Formbot Discord (do note most problems I could solve by just searching in the discord channels, please try this first). Here's a list of people I would like to thank:
+I had so many issues with my old small 3D printer I decided it was time to upgrade. I spent more time on fixing issues then printing and it got frustrating really fast so here we are. I bought a Formbot kit in the end of January. It has been sitting in it's box for a bit more then a month but this week was finally that week. This post will be a list of issues I found with the build, where the instructions simply were wrong or where I found it to be hard to follow. But to put this into context this build has for the most part been a lot of fun and of several hundred pages of documentations there are a few where things got unclear. The Voron team both surprise me of how well put together this is and inspire me. Vivedino (the company behind the formbot kit) has put together an amazing kit, I just wish they spent a few hours on the documentation.
+
+## Thanks to
+First things first. Credit where credit is due. This build would not have gone as well as it did if it wasn't for the amazing helt of people on the Voron, Formbot and Mellow 3D Discord (do note most problems I could solve by just searching in the discord channels, please try this first). Here's a list of people I would like to thank:
 
 Formbot Discord:
 - cashmoney
@@ -28,9 +31,12 @@ Voron Discord:
 - Hagbard V2.1070
 - MemorableC V2.1002
 
+Mellow 3D Discord:
+- jay_s_uk - teamgloomy
+
 I also watched a bunch of youtubers, for inspiration before buying and also to help me understand where things were a tiny bit unclear. As I don't have a complete list I wont include it but Voron-youtube, thanks!
 
-Last but not least course a huge thanks to the Voron team!
+Last but not least course **a huge thanks to the Voron team!**
 
 
 I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small(see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
@@ -41,7 +47,7 @@ If (when) I'm to do this again, I will also spend a few bucks on some plastic so
 ![](/images/sortment_box.jpg)
 ![](/images/screws_in_bags.jpeg)
 
-#### Jumping between different PDF:s
+## Jumping between different PDF:s
 It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the voron guide on page 178). The PDF's are:
 - [The Voron 2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 - [The Stealthburner Assembly Manual](https://github.com/VoronDesign/Voron-Stealthburner/raw/main/Manual/Assembly_Manual_SB.pdf)
@@ -69,12 +75,12 @@ I'll try summerising the jumps here:
 ||200||The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below|
 ||201|204||
 |Voron V2.4R2 & ormbot wiering PDF||| Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
-- Now follow the post build instructions to make sure you've done everything correct|
+|[Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)|||Now follow the post build instructions to make sure you've done everything correct|
 
 
-#### Notes from the build
+## Notes from the build
 
-##### The printed parts kit from Formbot
+### The printed parts kit from Formbot
 As my old printer had acted up I decided to buy a kit of parts from formbot (instead of using the print it forward program). This kit was mostly fine but there are three templates used when mounting the rails on the extrusion. I'm guessing most people who buy this kit of printed parts don't have a working printer at the moment. It would be nice if these were included. I guess some would have a printer that could print these in PLA but still. It's three very small parts to include I would happily pay an extra few bucks for. They are referenced as MGN12_rail_guide_x2.stl and MGN9_rail_guide_x2.stl and pulley_jig.stl in the Voron build guide.
 
 A quick note about that [kit](https://www.formbot3d.com/products/high-quality-3d-printed-parts-for-voron-24-pro-kit?VariantsId=11047), it also would be nice if they linked what filament they used so that one could print new matching parts when done.
@@ -98,12 +104,12 @@ How the original STL looks:
 Bending the mounts with a screwdriver helped with negitioating them to bend the way they need to.
 ![](/images/sitff_mount_tip.jpeg)
 
-###### Positives with the Formbot kit
+### Positives with the Formbot kit
 The driver assembly shown on page 21 of the Stealthburner PDF came pre assembled which is nice.
 
 The neopixels on page 46 of the Stealthburner PDF came pre-soldered which was nice.
 
-###### Larger issues
+### Larger issues
 The mounting of the DIN rails are different in the Voron setup. This was by far the most anoying thing in the whole build. I ofcourse did not notice this before trying to mounting the A and B motor cables. I had then spent some time tidying thing up. Had to redo everything. Also one of the motors has to be turned for the PSU to fit. I have no idea why they choce to do it this way nor why the documentations is so poor. It just seems odd to not make this very clear and spend some time making sure the electrical configuration guide is very clear. In frustration I asked about this on the Discord but mostly got a "everyone knows the documentation from Formbot sucks". I hope the new kits will force an update. I will also email about this. If there's a response I'll update this page.
 
 This is what the Voron guide says on page, note where front and back is.
@@ -122,7 +128,7 @@ Here's the problem with the morots on the 300x300 size.
 
 No mention to also drag neopixel cable, this you will probably find out after you've mounted everything making you have to redo the cable chains. If you have an octopus V1.1 it should be routed to the led pins, there should be three, this cable should be connected to the two on the USB-port side, with the 5V being closest to that side. They share ground with the rest of the board so that cable isn't needed.
 
-###### Minor issues
+### Minor issues
 In the kit the M3x10 BHCS screws are missing. I replaced these with the M3x12 BHCS. I was a bit affraid I might regrett this when they are needed later but so far I'm not sure where they are used. The Formbot-kit also seems to include a few extra of every screw which is very nice.
 
 The arm to cables mounted on the back of the Clockwork 2 is the wrong color. Not a big deal, just be aware when looking for it.
@@ -141,7 +147,7 @@ All screws in the kit are stainless steal, it's nice for everything but on page 
 The cable below is wrongly labled. It should say "Power to BED-Power". In later kits they've solved this with a sharpie.
 ![](wrongly_labled_cable.jpeg)
 
-###### Notes
+### Notes
 
 For anyone new here's a breakdown of what is what.
 ![](/images/what_is_what.png)
@@ -184,7 +190,12 @@ As you can see the non tuned printer has a bit of work ahead before it prints we
 
 As there were more 1mm foam-tape included I also added it to the inside of the doors which made a real impact.
 
-#### Summary
+When installing the Fly-ADXL345-USB (Mellow Fly used for imput shaping) I had some issues, first with getting the board into BOOTSEL mode and late when flashing. The issue was a typo from my side, please don't forget `/dev/serial/by-id/` in this command 
+```bash
+make KCONFIG_CONFIG=config.adxl345 flash FLASH_DEVICE=/dev/serial/by-id/usb-katapult_rp2040_E662549553812C2B-if00
+```
+
+## Summary
 All in all it's been a fun build. It now prints parts and seems happy. It took some time getting the config correct with all pins. I also mounted some led strips at the top of the chamber. I was a bit affraid of crashing the whole printer badly but thanks to the well written (initial setup guide)[https://docs.vorondesign.com/build/startup/] everything work out fine. Just remember TAP will figure out where true Z is. Make sure to put you <INCERT NAME OF Z DISTANCE> to what it should be. I used <INECERT NUMBER> and that seems to work fine. Also remember there is a huge community, I asked for help several times when I needed it. Just be mindful it's a community and not a support. I'm really happy I toke this project on and built what seems like a printer that will be my new working horse. Looking forward on tweeking it and improving print quality, one commit at a time.
 
 If you're interested in my config files they are available (here)[].
