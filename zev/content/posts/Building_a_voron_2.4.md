@@ -38,6 +38,9 @@ I also watched a bunch of youtubers, for inspiration before buying and also to h
 
 Last but not least course **a huge thanks to the Voron team!**
 
+---
+
+## For anyone considering this build
 
 I used a long list of tools to get this kit together. If you're not a DIY person with a pasion think twice before entering this journey. There's no complete bill of tools needed. Mostly because it varies what you need. For instance I needed drillbits to fix a few holes a fraction to small(see image below). If you self source everything you will need a JST-crimping tool. There is a tools tab on the sourcing guide but it's not complete. What you will need no matter what is a nice set of ball head hex key, trust me, you will use this so much is worth getting.
 ![](/images/tolarance_too_small.jpeg)
@@ -46,6 +49,8 @@ If (when) I'm to do this again, I will also spend a few bucks on some plastic so
 
 ![](/images/sortment_box.jpg)
 ![](/images/screws_in_bags.jpeg)
+
+Lastly, electricity, especially mains power and AC is dangerous. Please be careful.
 
 ## Jumping between different PDF:s
 It's a bit hard to know where to jump when, there are at least four different PDF:s you will need, plus an image of your controller board with all pins listed (this is linked on the voron guide on page 178). The PDF's are:
@@ -74,7 +79,7 @@ I'll try summerising the jumps here:
 ||194|199|mount cables in chains before mounting chains as it will be hard to do otherwise. Also don't forgett the extra LED cable which is separat from the other cable (if your kit is newer then mine it's sold with CAN-bus and this will be totally different as you probably won't have cable chains at all)|
 ||200||The B-motor cable is routed in the grove under the gantry with a plastic strip instead of zipties, see image under notes below|
 ||201|204||
-|Voron V2.4R2 & ormbot wiering PDF||| Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
+|Voron V2.4R2 & Formbot wiering PDF||| Attach cables between breakout board and controll board. When you have attached the last few cables you are mostly done with what you can do now, don't forgett to download and install the [Big tree tech PI version](https://github.com/bigtreetech/BTT-Pi) and from it flash the octopus board via the other smaller included SD-card.
 |[Software Configuration](https://docs.vorondesign.com/build/software/configuration.html)|||Now follow the post build instructions to make sure you've done everything correct|
 ---
 
@@ -87,7 +92,7 @@ I'll try summerising the jumps here:
 
 - One of these printed parts was I bit to tight. The part holds the gantry together. One of the A-B belt weels got too pinched. This happens, the tolarances are very fine. I shimed the part with two layers of craft paper and it now works perfectly.
 
-- The bracket for the cables between the smaller cable chains shown on page 204 of the Voron 2.4R2 PDF was a bit to tight, I used a drillbit and just removed some plastic by hand. It's also hard to cram all cables and a cable sleeve into, if I did not plan on modding the printer with a canbus I would probalby redesign this.
+- The bracket for the cables between the smaller cable chains shown on page 204 of the Voron 2.4R2 PDF was a bit to tight (see image above), I used a drillbit and just removed some plastic by hand. It's also hard to cram all cables and a cable sleeve into, if I did not plan on modding the printer with a canbus I would probalby redesign this.
 
 - The Voron Tap plate seems to be of a different kind. Not sure if this is a old revision or if this is some custom Formbot thing. See image below.
 ![](/images/SB_mount.jpg)
@@ -103,7 +108,7 @@ How the original STL looks:
 - The arm to cables mounted on the back of the Clockwork 2 is the wrong color. Not a big deal, just be aware when looking for it.
 
 - Bending the mounts with a screwdriver helped with negitioating them to bend the way they need to.
-![](/images/sitff_mount_tip.jpeg)
+![](/images/stiff_mount_tip.jpeg)
 
 ### Positives with the Formbot kit
 - The driver assembly shown on page 21 of the Stealthburner PDF came pre assembled which is nice.
@@ -113,7 +118,7 @@ How the original STL looks:
 - Extra screws, huge plus.
 
 ### Larger issues
-- The mounting of the DIN rails are different in the Voron setup. This was by far the most anoying thing in the whole build. I ofcourse did not notice this before trying to mounting the A and B motor cables. I had then spent some time tidying thing up. Had to redo everything. Also one of the motors has to be turned for the PSU to fit. I have no idea why they choce to do it this way nor why the documentations is so poor. It just seems odd to not make this very clear and spend some time making sure the electrical configuration guide is very clear. In frustration I asked about this on the Discord but mostly got a "everyone knows the documentation from Formbot sucks". I hope the new kits will force an update.
+- The mounting of the DIN rails are different in the Voron setup. This was by far the most anoying thing in the whole build. I of course did not notice this before trying to mounting the A and B motor cables. I had then spent some time tidying thing up. Had to redo everything. Also one of the motors has to be turned for the PSU to fit. I have no idea why they choce to do it this way nor why the documentations is so poor. It just seems odd to not make this very clear and spend some time making sure the electrical configuration guide is very clear. In frustration I asked about this on the Discord but mostly got a "everyone knows the documentation from Formbot sucks". I hope the new kits will force an update.
 
 - This is what the Voron guide says on page, note where front and back is.
 ![](/images/voron_din_rails_mount.png)
@@ -126,7 +131,7 @@ How the original STL looks:
 ![](/images/re-mounting.jpeg)
 ![](/images/Electrics_mounted.jpeg)
 
-- Here's the problem with the morots on the 300x300 size.
+- Here's the problem with the morots on the 300x300 size. This i fixed by turning the motor 90 degrees so that the cables are pointed upwards.
 ![](/images/motor_cables_not_fitting.jpeg)
 
 - No mention to also drag neopixel cable, this you will probably find out after you've mounted everything making you have to redo the cable chains. If you have an octopus V1.1 it should be routed to the led pins, there should be three, this cable should be connected to the two on the USB-port side, with the 5V being closest to that side. They share ground with the rest of the board so that cable isn't needed.
@@ -150,6 +155,8 @@ How the original STL looks:
 
 - The cable below is wrongly labled. It should say "Power to BED-Power". In later kits they've solved this with a sharpie.
 ![](/images/wrongly_labled_cable.jpeg)
+
+The cable chains are kind of bad quality. A few of my clips broke. As I plan to do a CAN-bus mod I don't care but if you're planning to keep them I would probably change these out.
 
 ### Notes
 
@@ -193,7 +200,7 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 - B-motor cable route, used instead of zipties
 ![](/images/A_B_motor_cable.jpeg)
 
-- From what I remember, the kit said to include a nevermore filter. It dosen't. It does include some hardware, fans, coal, WAGO-clips, a cable, some screws. But it does not include the plastic parts. This is a bit of an issue. I would want the filter to print ABS, but to print ABS I want that filter. I opted to first print all panel clips in PLA and then print the nevermore parts it with a window open. The printer isn't tuned properly but I also don't want to do that without the filter. So this is good enough for now. When the printer is tuned I will reprint this. I can also say mounting this was hell, getting the headed bed back in place took some time. As you can see I choose to print the [V6 version](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) and not the [Formbot version](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view) (if link is broken, they can be found [here](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view)). I didn't have a JST connector over so I've temporarily used other connectors.
+- From what I remember, the kit said to include a nevermore filter. It dosen't. It does include some hardware, fans, coal, WAGO-clips, a cable, some screws. But it does not include the plastic parts. This is a bit of an issue. I would want the filter to print ABS, but to print ABS I want that filter. I opted to first print all panel clips in PLA and then print the nevermore parts with a window open. The printer isn't tuned properly but I also don't want to do that without the filter. So this is good enough for now. When the printer is tuned I will reprint this. I can also say mounting this was hell, getting the heated bed back in place took some time. As you can see I choose to print the [V6 version](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) and not the [Formbot version](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view) (if link is broken, they can be found [here](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view)). I didn't have a JST connector over so I've temporarily used other connectors.
 ![](/images/never_more_temp_connectors.jpeg)
 
 - As you can see the non tuned printer has a bit of work ahead before it prints well.
@@ -202,7 +209,7 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 
 - As there were more 1mm foam-tape included I also added it to the inside of the doors which made a real impact.
 
-- When installing the Fly-ADXL345-USB (Mellow Fly used for imput shaping) I had some issues, first with getting the board into BOOTSEL mode and late when flashing. The issue was a typo from my side, please don't forget `/dev/serial/by-id/` in this command 
+- When installing the Fly-ADXL345-USB (Mellow Fly used for imput shaping) I had some issues, first with getting the board into BOOTSEL mode and late when flashing. The first issue I have no idea of how it happened. I did the same thing about 50 times and all of a sudden it worked. The second issue was a typo from my side, please don't forget `/dev/serial/by-id/` in this command 
 ```bash
 make KCONFIG_CONFIG=config.adxl345 flash FLASH_DEVICE=/dev/serial/by-id/usb-katapult_rp2040_E662549553812C2B-if00
 ```
@@ -210,4 +217,4 @@ make KCONFIG_CONFIG=config.adxl345 flash FLASH_DEVICE=/dev/serial/by-id/usb-kata
 ## Summary
 All in all it's been a fun build. It now prints parts and seems happy. It took some time getting the config correct with all pins. I also mounted some led strips at the top of the chamber. I was a bit affraid of crashing the whole printer badly but thanks to the well written [initial setup guide](https://docs.vorondesign.com/build/startup/) everything work out fine. Just remember TAP will figure out where true Z is. Make sure to put you `z_offset` to what it should be. I used TBD and that seems to work fine. Also remember there is a huge community, I asked for help several times when I needed it. Just be mindful it's a community and not a support. I'm really happy I toke this project on and built what seems like a printer that will be my new working horse. Looking forward on tweeking it and improving print quality, one commit at a time.
 
-If you're interested in my config files they are available (here)[].
+If you're interested in my config files they are available (here)[https://github.com/Zev-se/voron_2.4_config].
