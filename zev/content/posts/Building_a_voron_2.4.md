@@ -152,20 +152,20 @@ How the original STL looks:
 ![](/images/earth_too_short.jpeg)
 ![](/images/earth_too_small.jpeg)
 
-- All screws in the kit are stainless steal, it's nice for everything but on page 27 of the TAP manual. The two M3x6 FHCS needs to me magnetic. I had to find my own and change these out.
+- All screws in the kit are stainless steal, it's nice for everything but on page 27 of the TAP manual. The two M3x6 FHCS needs to be magnetic. I had to find my own and change these out.
 ![](/images/replaced_screws.jpeg)
 
 - The cable below is wrongly labled. It should say "Power to BED-Power". In later kits they've solved this with a sharpie.
 ![](/images/wrongly_labled_cable.jpeg)
 
-The cable chains are kind of bad quality. A few of my clips broke. As I plan to do a CAN-bus mod I don't care but if you're planning to keep them I would probably change these out.
+- The cable chains are kind of bad quality. A few of my clips broke. As I plan to do a CAN-bus mod I don't care but if you're planning to keep them I would probably change these out.
 
 ### Notes
 
 For anyone new here's a breakdown of what is what.
 ![](/images/what_is_what.png)
 
-RED - Motor turned 90 degrees (see more further down)
+RED - Motor turned 90 degrees (see more further above)
 
 PINK - This is the on off switch for the heated bed, it's not an invertor as one might think. In the Voron documentation this is called the AC BED CONTROL.
 
@@ -193,7 +193,7 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 ![](/images/voron_limit_switch.png)
 ![](/images/wrongly_mounted_switch.jpeg)
 
-- I found it to be unclear how many of what panel mounts are needed. But the STLs actually says that I noticed later. For instance bottom_panel_clip_x4.stl, the x4 is the about needed. I printed these in PLA for now. I need the panels to print ABS so it's a bit of a catch 22.
+- I found it to be unclear how many of what panel mounts are needed. But the STLs actually says that I noticed later. For instance bottom_panel_clip_x4.stl, the x4 is the amout needed. I printed these in PLA for now. I need the panels to print ABS so it's a bit of a catch 22.
 
 - The cable chains are a bit too long, you can remove links so this really isn't an issue. Rather nice having a few extra. A tip is to mount the ends separatly and connect them once all the cables are inside (as the part that closes will face down towards the 20x20 extrusion).
 ![](/images/Cable_chain_too_long.jpeg)
@@ -202,7 +202,9 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 - B-motor cable route, used instead of zipties
 ![](/images/A_B_motor_cable.jpeg)
 
-- From what I remember, the kit said to include a nevermore filter. It dosen't. It does include some hardware, fans, coal, WAGO-clips, a cable, some screws. But it does not include the plastic parts. This is a bit of an issue. I would want the filter to print ABS, but to print ABS I want that filter. I opted to first print all panel clips in PLA and then print the nevermore parts with a window open. The printer isn't tuned properly but I also don't want to do that without the filter. So this is good enough for now. When the printer is tuned I will reprint this. I can also say mounting this was hell, getting the heated bed back in place took some time. As you can see I choose to print the [V6 version](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) and not the [Formbot version](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view) (if link is broken, they can be found [here](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view)). I didn't have a JST connector over so I've temporarily used other connectors.
+- From what I remember, the kit said to include a nevermore filter. It dosen't. It does include some hardware, fans, coal, WAGO-clips, a cable, some screws. But it does not include the plastic parts. This is a bit of an issue. I would want the filter to print ABS, but to do so I need to print the filter, in ABS. I opted to first print all panel clips in PLA and then print the nevermore parts with a window open. The printer isn't tuned properly but I also don't want to do that without the filter. So this is good enough for now. When the printer is tuned I will reprint this. 
+
+- I can also say mounting this was hell, getting the heated bed back in place took some time. As you can see I choose to print the [V6 version](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V6) and not the [Formbot version](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view) (if link is broken, they can be found [here](https://drive.google.com/file/d/13Aie-BDK4WHfmduJOtDo85zog0QI33kh/view)). I didn't have a JST connector over so I've temporarily used other connectors.
 ![](/images/never_more_temp_connectors.jpeg)
 
 - As you can see the non tuned printer has a bit of work ahead before it prints well.
@@ -217,6 +219,6 @@ make KCONFIG_CONFIG=config.adxl345 flash FLASH_DEVICE=/dev/serial/by-id/usb-kata
 ```
 
 ## Summary
-All in all it's been a fun build. It now prints parts and seems happy. It took some time getting the config correct with all pins. I also mounted some led strips at the top of the chamber. I was a bit affraid of crashing the whole printer badly but thanks to the well written [initial setup guide](https://docs.vorondesign.com/build/startup/) everything work out fine. Just remember TAP will figure out where true Z is. Make sure to put you `z_offset` to what it should be. I used TBD and that seems to work fine. Also remember there is a huge community, I asked for help several times when I needed it. Just be mindful it's a community and not a support. I'm really happy I toke this project on and built what seems like a printer that will be my new working horse. Looking forward on tweeking it and improving print quality, one commit at a time.
+All in all it's been a fun build. It now prints parts and seems happy. It took some time getting the config correct with all pins. I also mounted some led strips at the top of the chamber. I was a bit affraid of crashing the whole printer badly but thanks to the well written [initial setup guide](https://docs.vorondesign.com/build/startup/) everything work out fine. Just remember TAP will figure out where true Z is. Make sure to put you `z_offset` to what it should be. I used TBD and that seems to work okay. Also remember there is a huge community, I asked for help several times when I needed it. Just be mindful it's a community and not a support. I'm really happy I toke this project on and built what seems like a printer that will be my new working horse. Looking forward on tweeking it and improving print quality, one commit at a time.
 
-If you're interested in my config files they are available (here)[https://github.com/Zev-se/voron_2.4_config].
+If you're interested in my config files they are available [here](https://github.com/Zev-se/voron_2.4_config).
