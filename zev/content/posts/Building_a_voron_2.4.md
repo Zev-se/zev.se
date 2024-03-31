@@ -165,7 +165,7 @@ How the original STL looks:
 For anyone new here's a breakdown of what is what.
 ![](/images/what_is_what.png)
 
-RED - Motor turned 90 degrees (see more further above)
+RED - Motor turned 90 degrees (Formbot 300X300 kit)
 
 PINK - This is the on off switch for the heated bed, it's not an invertor as one might think. In the Voron documentation this is called the AC BED CONTROL.
 
@@ -195,7 +195,7 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 
 - I found it to be unclear how many of what panel mounts are needed. But the STLs actually says that I noticed later. For instance bottom_panel_clip_x4.stl, the x4 is the amout needed. I printed these in PLA for now. I need the panels to print ABS so it's a bit of a catch 22.
 
-- The cable chains are a bit too long, you can remove links so this really isn't an issue. Rather nice having a few extra. A tip is to mount the ends separatly and connect them once all the cables are inside (as the part that closes will face down towards the 20x20 extrusion).
+- The cable chains are a bit too long, you can remove links so this really isn't an issue. Rather nice having a few extra. A tip is to mount the ends separatly and connect them once all the cables are inside (as the snaps closing the chain will face down towards the 20x20 extrusion).
 ![](/images/Cable_chain_too_long.jpeg)
 ![](/images/cable_chain_tip.jpeg)
 
