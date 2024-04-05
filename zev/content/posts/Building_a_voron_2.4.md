@@ -38,6 +38,14 @@ I also watched a bunch of youtubers, for inspiration before buying and also to h
 
 Last but not least course **a huge thanks to the Voron team!**
 
+EDIT, after publishing I've gotten some feedback, typos, things I've missed, better explainations and so on. Here's a list of people who helped out:
+Formbot Discord:
+- Beluguita
+
+Voron Discord:
+- Joel V2.4771 V2.6459
+- ganster_uk V2.5588
+
 ---
 
 ## For anyone considering this build
@@ -63,7 +71,9 @@ I'll try summerising the jumps here:
 
 | Switch to manual| Page | Stop at page | Comment|
 |---|----|----|---|
-|Voron 2.4R2|1|29||
+|Voron 2.4R2|1|27||
+|||28| Be sure to remove all protective plastic film, this will be difficult to remove later and might be a firehassard as well as a source to bad smell|
+|||29||
 ||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
 ||31|38||
 ||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
@@ -95,7 +105,7 @@ I'll try summerising the jumps here:
 
 - The bracket for the cables between the smaller cable chains shown on page 204 of the Voron 2.4R2 PDF was a bit to tight (see image above), I used a drillbit and just removed some plastic by hand. It's also hard to cram all cables and a cable sleeve into, if I did not plan on modding the printer with a canbus I would probalby redesign this.
 
-- The Voron Tap plate seems to be of a different kind. Not sure if this is a old revision or if this is some custom Formbot thing. See image below.
+- The Voron Tap plate is different from the Voron documentation, this is the R8 version. See differances in image below.
 ![](/images/SB_mount.jpg)
 Original tap design:
 ![](/images/SB_original_mount.png)
@@ -132,7 +142,7 @@ How the original STL looks:
 ![](/images/re-mounting.jpeg)
 ![](/images/Electrics_mounted.jpeg)
 
-- Here's the problem with the morots on the 300x300 size. This i fixed by turning the motor 90 degrees so that the cables are pointed upwards. If you look closly this is done in the image above.
+- Here's the problem with the motors on the 300x300 size. This i fixed by turning the motor 90 degrees so that the cables are pointed upwards. If you look closly this is done in the image above.
 ![](/images/motor_cables_not_fitting.jpeg)
 
 - No mention to also drag neopixel cable, this you will probably find out after you've mounted everything making you have to redo the cable chains. If you have an octopus V1.1 it should be routed to the led pins, there should be three, this cable should be connected to the two on the USB-port side, with the 5V being closest to that side. They share ground with the rest of the board so that cable isn't needed.
@@ -152,7 +162,7 @@ How the original STL looks:
 ![](/images/earth_too_short.jpeg)
 ![](/images/earth_too_small.jpeg)
 
-- All screws in the kit are stainless steal, it's nice for everything but on page 27 of the TAP manual. The two M3x6 FHCS needs to be magnetic. I had to find my own and change these out.
+- All screws in the kit are stainless steal, it's nice for everything but on page 27 of the TAP manual. The two M3x6 FHCS needs to be magnetic. I had to find my own and change these out. Later in feedback I learned that this is the R8 version of TAP and that it works with four magnets as well, this might have been the solution Formbot intended. I will probably change these next time I remove the extruder.
 ![](/images/replaced_screws.jpeg)
 
 - The cable below is wrongly labled. It should say "Power to BED-Power". In later kits they've solved this with a sharpie.
@@ -167,7 +177,7 @@ For anyone new here's a breakdown of what is what.
 
 RED - Motor turned 90 degrees (Formbot 300X300 kit)
 
-PINK - This is the on off switch for the heated bed, it's not an invertor as one might think. In the Voron documentation this is called the AC BED CONTROL.
+PINK - This is the on off switch for the heated bed, it's not an invertor as one might think. In the Voron documentation this is called the AC BED CONTROL. To be specific this is a Solid State Relay (SSR). 
 
 YELLOW - PSU, the powersupply. In the Voron documentation this is called the LRS-200-24 PSU.
 
