@@ -73,7 +73,7 @@ I'll try summerising the jumps here:
 |---|----|----|---|
 |Voron 2.4R2|1|27||
 |||28| Be sure to remove all protective plastic film, this will be difficult to remove later and might be a firehassard as well as a source to bad smell|
-|||29||
+||29|-||
 ||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
 ||31|38||
 ||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
