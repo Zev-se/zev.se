@@ -39,6 +39,7 @@ I also watched a bunch of youtubers, for inspiration before buying and also to h
 Last but not least course **a huge thanks to the Voron team!**
 
 EDIT, after publishing I've gotten some feedback, typos, things I've missed, better explainations and so on. Here's a list of people who helped out:
+
 Formbot Discord:
 - Beluguita
 
