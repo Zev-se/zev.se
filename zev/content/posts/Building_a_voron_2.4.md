@@ -73,7 +73,7 @@ I'll try summerising the jumps here:
 | Switch to manual| Page | Stop at page | Comment|
 |---|----|----|---|
 |Voron 2.4R2|1|27||
-|||28| Be sure to remove all protective plastic film, this will be difficult to remove later and might be a firehassard as well as a source to bad smell|
+|||28| Be sure to remove all protective plastic film from the deck plate, this will be difficult to remove later and might be a firehassard as well as a source to bad smell, I've missed this and will thus have to remove all electronics (again) and two of the motors. The deck plate should be black on one side, this is what you see with white plastic with writing on in all images below (mounted down towards the electronics) |
 ||29|-||
 ||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
 ||31|38||
@@ -83,7 +83,9 @@ I'll try summerising the jumps here:
 |Voron 2.4R2|131|142||
 |Voron TAP|31|36|||
 |Stealthburner PDF|1|58|note cabeling will be different, for this check the Formbot wiering PDF, also note there are two different dimentions of PTFE tube included, choose the correct one.|
-|Voron 2.4R2|148|157|Don't mount anything. Also note there's no 5V PSU but instead a extra PCB|
+|Voron 2.4R2|148|155|Don't mount anything. Also note there's no 5V PSU but instead a extra PCB|
+|||156| Dont forget to change the fuse, it's shipped with a 10A fuse. It should be changed for a 4A for 230V and 8A for 110V|
+|||157||
 ||162|167| Skip page 158-161|
 ||175|177| Skip page 168-174|
 |Formbot Wiering guide|1|4|mount the components as shown on the image, note that is the 350x350 so if you build a smaller printer it will be tighter. There's a picture further down in this blog-post with what is what.|
@@ -199,6 +201,9 @@ ORANGE - This is Formbots own PCB, in the Voron documentation this is the same a
 ![](/images/other_bearings.jpeg)
 
 - There's no z endstop included because of TAP, there's also no 5V PSU included because the BTT PI runs on 24V. Not a problem, just be aware so you don't spend time searching for items that simply aren't there.
+
+- Don't forget to change the fuse. It might be hard to know where to find it. Here's an image. 4A for 230V and 8A for 110V. Here's the nice explaination I got "The Bed has 650 Watt + PSU 200 Watt...  850 Watt / 230V = 3,7 Amp".
+![](/images/fuse.jpeg)
 
 - On page 163 one of the Voron 2.4R2 PDF the limit switches are installed a different way then the once in the kit, this does not make a difference, it's just a bit confusing.
 ![](/images/voron_limit_switch.png)
