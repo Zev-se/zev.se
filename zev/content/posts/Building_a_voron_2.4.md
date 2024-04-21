@@ -11,6 +11,8 @@ externalLink = ""
 series = []
 +++
 
+EDIT: This guide was from the beginning written as a combination of a review and a help to others. The kit has been updated since. If there are things that are incorrect now or there are other details you would want to add please do reach out. I'm on both the Voron and Formbot Discord.
+
 I had so many issues with my old small 3D printer I decided it was time to upgrade. I spent more time on fixing issues then printing and it got frustrating really fast so here we are. I bought a Formbot kit in the end of January. It has been sitting in it's box for a bit more then a month but a few weeks ago was finally that week. This post will be a list of issues I found with the build, where the instructions simply were wrong or where I found it to be hard to follow. But to put this into perspective this build has for the most part been a lot of fun and of several hundred pages of documentations there are a few places where things got unclear. The Voron team both surprise me of how well put together this is and inspire me. Vivedino (the company behind the Formbot kit) has put together an amazing kit, I just wish they spent a few hours on the documentation.
 
 ## Thanks to
@@ -75,7 +77,7 @@ I'll try summerising the jumps here:
 |Voron 2.4R2|1|27||
 |||28| Be sure to remove all protective plastic film from the deck plate, this will be difficult to remove later and might be a firehassard as well as a source to bad smell, I've missed this and will thus have to remove all electronics (again) and two of the motors. The deck plate should be black on one side, this is what you see with white plastic with writing on in all images below (mounted down towards the electronics) |
 ||29|-||
-||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue|
+||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue. This does not apply to the 250, if you do this the PSU won't fit. Will update with images when and if I get them from some kind community member |
 ||31|38||
 ||39|-|if you build a 300x300 Formbot turn one of the motors 90 degrese so that the cable is on the same side as the two screws of the bracket, this will be Z1 later|
 ||40|129||
