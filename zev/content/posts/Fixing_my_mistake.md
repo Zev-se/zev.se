@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2024-07-02T21:21:17+01:00
+date = 2024-07-01T21:21:17+01:00
 title = "Fixing my misstake"
 description = ""
 slug = ""
