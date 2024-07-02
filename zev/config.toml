@@ -45,7 +45,7 @@ pygmentscodefencesguesssyntax = true
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/zev_se/"
+  url = "https://github.com/Zev-se/"
 #[[params.social]]
 #  name = "Gitlab"
 #  icon = "fa fa-gitlab fa-2x"
