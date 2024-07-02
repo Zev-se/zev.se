@@ -19,4 +19,4 @@ When I built my Voron I messed up and missed that deck panel was suppsed to be b
 *Note the plastic cover with chineese writing on it.*
 ![](/images/finally_black.jpeg)
 
-Bonus tip, if you print ![these](https://www.printables.com/model/411428-voron-24-flex-plate-stops) and mount them before removing the heated bed it will be much easier to remount in the correct place later. Removing the heated bed isn't strictly nessesary but my cables for the Nevermore is a bit short so I needed to remove the bed to reconnect them.
+Bonus tip, if you print [these](https://www.printables.com/model/411428-voron-24-flex-plate-stops) and mount them before removing the heated bed it will be much easier to remount in the correct place later. Removing the heated bed isn't strictly nessesary but my cables for the Nevermore is a bit short so I needed to remove the bed to reconnect them.
