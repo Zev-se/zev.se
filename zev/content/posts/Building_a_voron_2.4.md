@@ -75,7 +75,7 @@ I'll try summerising the jumps here:
 | Switch to manual| Page | Stop at page | Comment|
 |---|----|----|---|
 |Voron 2.4R2|1|27||
-|||28| Be sure to remove all protective plastic film from the deck plate, this will be difficult to remove later and might be a firehassard as well as a source to bad smell, I've missed this and will thus have to remove all electronics (again) and two of the motors. The deck plate should be black on one side, this is what you see with white plastic with writing on in all images below (mounted down towards the electronics) |
+|||28| Be sure to remove all protective plastic film from the deck plate, this will be difficult to remove later and might be a firehassard as well as a source to bad smell, I've missed this and will thus have to remove all electronics (again) and two of the motors. The deck plate should be black on one side, this is what you see with white plastic with writing on in all images below (mounted down towards the electronics). EDIT: this is now fixed, see later blogpost. |
 ||29|-||
 ||30|-|turn the DIN-rails 90 degres (if Formbot, we'll get to why later) then continue. This does not apply to the 250, if you do this the PSU won't fit. Will update with images when and if I get them from some kind community member |
 ||31|38||
