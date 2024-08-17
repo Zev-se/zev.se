@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2024-08-17T11:25:17+01:00
+date = 2024-08-17T11:25:17+00:00
 title = "Tips till en 18-åring"
 description = ""
 slug = ""
