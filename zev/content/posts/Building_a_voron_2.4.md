@@ -15,7 +15,9 @@ EDIT: This guide was from the beginning written as a combination of a review and
 
 ---
 **NOTE**
+
 EDIT2: **This guide is deprecated**. Please see and help out in the github-project instead. It's been improved by alot since this was written. You can find it [here](https://github.com/Zev-se/Formbot-voron-2.4-build-guide).
+
 ---
 
 I had so many issues with my old small 3D printer I decided it was time to upgrade. I spent more time on fixing issues then printing and it got frustrating really fast so here we are. I bought a Formbot kit in the end of January. It has been sitting in it's box for a bit more then a month but a few weeks ago was finally that week. This post will be a list of issues I found with the build, where the instructions simply were wrong or where I found it to be hard to follow. But to put this into perspective this build has for the most part been a lot of fun and of several hundred pages of documentations there are a few places where things got unclear. The Voron team both surprise me of how well put together this is and inspire me. Vivedino (the company behind the Formbot kit) has put together an amazing kit, I just wish they spent a few hours on the documentation.
